@@ -4,7 +4,7 @@ from time import time
 
 if __name__ == "__main__":
 
-
+    start_time = time()
     #### Expected value is 68.2
     N_list = []
     outer_count = 0 
@@ -36,6 +36,5 @@ if __name__ == "__main__":
         total_perc += perc
     total_perc = total_perc / outer_obs
     
-    print(total_perc)
-
-    
+    print(f"{(total_perc):.2f}")
+    print(f"Execution Time: {(time() - start_time):.2f}")
